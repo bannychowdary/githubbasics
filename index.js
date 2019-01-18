@@ -32,7 +32,7 @@ app.post("/about",urlencodeparser,function(req,res){
     res.send("Request information:" + JSON.stringify(req.body))
 })
 
-app.post('/contact/:name',function(req,res){
+app.get('/contact/:name',function(req,res){
     console.log("get in touch with:" + req.params.name)
     console.log(req.body)
     // var profileData = {
